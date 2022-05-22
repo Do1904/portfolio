@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #002a8b, #ffffff, #611e1e);
+    /*グラデーションを定義*/
+    background-size: 200% 200%;
+    /*サイズを大きくひきのばす*/
+    animation: bggradient 20s ease infinite;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    color: rgb(0, 0, 0);
+}
+
+@keyframes bggradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hometext {
+    animation-name: fadeInAnime;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background: #ffffff;
+    /*背景色の指定*/
+    border: #d2d2d2 2px solid;
+    /*境界線の指定 */
+    box-shadow: 0 0 0 6px #ffffff;
+    /*  境界線の外側の指定 */
+    padding: 40px 90px;
+    margin: 40px auto;
+    width: 30%;
+}
+
+.hometext p {
+    margin: 40px;
+    padding: 40px;
+}
