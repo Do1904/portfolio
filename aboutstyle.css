@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body {
-    background-color: #002a8b;
+    width: auto;
+    height: 90vh;
+    background: linear-gradient(45deg, #002a8b, #305399, #122191);
+    /*グラデーションを定義*/
+    background-size: 140% 140%;
+    /*サイズを大きくひきのばす*/
+    animation: bggradient 20s ease infinite;
     text-align: center;
     font-family: 'Josefin Sans';
     color: rgb(255, 255, 255);
+}
+
+@keyframes bggradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .header {
