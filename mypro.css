@@ -3,9 +3,9 @@
 body{
     width: auto;
     height: 90vh;
-    background: linear-gradient(45deg, #3a0a0a, #500303, #611e1e);
+    background: linear-gradient(45deg,#2a0e0e, #611e1e ,#000000);
     /*グラデーションを定義*/
-    background-size: 140% 140%;
+    background-size: 180% 180%;
     /*サイズを大きくひきのばす*/
     animation: bggradient 20s ease infinite;
     text-align: center;
@@ -65,7 +65,7 @@ body{
 .hobby {
     background: #00000021;
     /*背景色の指定*/
-    border: #00000049 2px solid;
+    border: #0000002f 2px solid;
     /*境界線の指定 */
     padding: 40px 90px;
     margin: 40px auto;
