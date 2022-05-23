@@ -3,7 +3,7 @@
 body{
     width: auto;
     height: 90vh;
-    background: linear-gradient(45deg, #022064, #0d2451, #0033ab);
+    background: linear-gradient(45deg, #a95959, #6c0000, #611e1e);
     /*グラデーションを定義*/
     background-size: 140% 140%;
     /*サイズを大きくひきのばす*/
