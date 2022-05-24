@@ -14,6 +14,11 @@ body{
     background-attachment: fixed;
 }
 
+
+header#homebutton {
+    position:fixed;
+}
+
 @keyframes bggradient {
     0% {
         background-position: 0% 50%;
@@ -90,4 +95,22 @@ body{
     padding: 40px 90px;
     margin: 40px auto;
     width: 30%;
+}
+
+.home {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+	padding: 0.2em 0.4em;
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, #ffffffa8 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: .3s;
+	color: #ffffffb5;
+}
+.home:hover {
+	background-position: 0 100%;
+	color: rgba(105, 105, 105, 0.673);
 }

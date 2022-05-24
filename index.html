@@ -7,17 +7,13 @@
     var langDetect = 0;
     // langDetect 0: 英語
     // langDetect 1: 日本語
-    function buttonJpPressed() {
+    function buttonlangPressed() {
       if (langDetect == 0) {
-        document.getElementById('welcome').innerHTML = "ようこそ";
+        document.getElementById('welcome').innerHTML = "ようこそ!";
         langDetect = 1;
         console.log(langDetect);
-      }
-    }
-
-    function buttonEnPressed() {
-      if (langDetect == 1) {
-        document.getElementById('welcome').innerHTML = "Welcome to";
+      } else if (langDetect == 1) {
+        document.getElementById('welcome').innerHTML = "Welcome!";
         langDetect = 0;
         console.log(langDetect);
       }
@@ -28,7 +24,7 @@
 <body>
   <br><br><br><br><br><br><br>
   <div class="box fadeIn">
-    <h2 id="welcome">Welcome</h2>
+    <h2 id="welcome">Welcome!</h2>
   </div>
   <div class="hometext">
     <p>:Do</p>
@@ -40,8 +36,9 @@
     </a>
   </div>
   <br><br>
-  <a class="change_lang" href="javascript:buttonEnPressed();" style="text-decoration:none;">English</a>
-  <a class="change_lang" href="javascript:buttonJpPressed();" style="text-decoration:none;">日本語</a>
+  <a class="change_lang" href="javascript:buttonlangPressed();" style="text-decoration:none;"><img src="lang2.png"
+      width="31" height="31" alt="language"></a>
+  <!-- <a class="change_lang" href="javascript:buttonJpPressed();" style="text-decoration:none;">日本語</a> -->
 </body>
 
 </html>
