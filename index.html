@@ -4,8 +4,23 @@
 <head>
   <link rel="stylesheet" href="mystyle.css">
   <script>
-    function buttonLangPressed(){
-      document.getElementById(welcome).innerHTML = "ようこそ！";
+    var langDetect = 0;
+    // langDetect 0: 英語
+    // langDetect 1: 日本語
+    function buttonJpPressed() {
+      if (langDetect == 0) {
+        document.getElementById('welcome').innerHTML = "ようこそ";
+        langDetect = 1;
+        console.log(langDetect);
+      }
+    }
+
+    function buttonEnPressed() {
+      if (langDetect == 1) {
+        document.getElementById('welcome').innerHTML = "Welcome to";
+        langDetect = 0;
+        console.log(langDetect);
+      }
     }
   </script>
 </head>
@@ -13,7 +28,7 @@
 <body>
   <br><br><br><br><br><br><br>
   <div class="box fadeIn">
-    <h2 id="welcome">Welcome to</h2>
+    <h2 id="welcome">Welcome</h2>
   </div>
   <div class="hometext">
     <p>:Do</p>
