@@ -33,7 +33,7 @@ header#homebutton {
     }
 }
 
-.header {
+.top {
     animation-name: fadeInAnime;
     animation-delay: 0.5s;
     animation-duration: 2s;
@@ -104,18 +104,45 @@ header#homebutton {
     animation-fill-mode: forwards;
     opacity: 0;
 	padding: 0.2em 0.4em;
-	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, #ffffffa8 50%);
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, #ffffff 50%);
 	background-position: 0 0;
 	background-size: 200% auto;
 	transition: .3s;
 	color: #ffffff;
 }
 .home:hover {
+	background-position: 100% 0;
+	color: rgb(0, 0, 0);
+}
+
+.lang {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+.menu {
+    animation-name: fadeInAnime;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+	padding: 0.2em 0.4em;
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, #ffffffa8 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: .3s;
+	color: #ffffff;
+}
+.menu:hover {
 	background-position: 0 100%;
 	color: rgba(105, 105, 105, 0.673);
 }
 
-.menu {
+.mypro {
     animation-name: fadeInAnime;
     animation-delay: 0.5s;
     animation-duration: 2s;
@@ -126,9 +153,9 @@ header#homebutton {
 	background-position: 0 0;
 	background-size: 200% auto;
 	transition: .3s;
-	color: #611e1e;
+	color: #ffffff;
 }
-.menu:hover {
+.mypro:hover {
 	background-position: 100% 0;
 	color: rgb(234, 227, 0);
 }
