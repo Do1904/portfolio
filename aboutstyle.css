@@ -108,7 +108,7 @@ header#homebutton {
 	background-position: 0 0;
 	background-size: 200% auto;
 	transition: .3s;
-	color: #ffffffb5;
+	color: #ffffff;
 }
 .home:hover {
 	background-position: 0 100%;

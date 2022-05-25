@@ -13,6 +13,11 @@ body {
     color: rgba(0, 0, 0, 0.859);
 }
 
+header#home {
+    position:fixed;
+    width: 98.1%;
+}
+
 @keyframes bggradient {
     0% {
         background-position: 0% 50%;
@@ -28,11 +33,17 @@ body {
 }
 
 .fadeIn {
+    text-align: center;
+    margin: auto;
     animation-name: fadeInAnime;
     animation-delay: 0.5s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+#welcome {
+    text-align: center;
 }
 
 @keyframes fadeInAnime {
