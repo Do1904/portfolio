@@ -114,3 +114,21 @@ header#homebutton {
 	background-position: 0 100%;
 	color: rgba(105, 105, 105, 0.673);
 }
+
+.menu {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+	padding: 0.2em 0.4em;
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, #611e1e 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: .3s;
+	color: #611e1e;
+}
+.menu:hover {
+	background-position: 100% 0;
+	color: rgb(234, 227, 0);
+}

@@ -15,7 +15,7 @@ body {
 
 header#home {
     position:fixed;
-    width: 98.1%;
+    width: 98.4%;
 }
 
 @keyframes bggradient {
@@ -120,5 +120,17 @@ header#home {
 .change_lang:hover {
 	background-position: 0 100%;
 	color: rgba(209, 209, 209, 0.78);
+}
+
+.insta {
+    animation-name: fadeInAnime;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.icons{
+    margin: auto;
 }
 
