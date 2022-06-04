@@ -3,7 +3,7 @@
 body{
     width: auto;
     height: 90vh;
-    background: linear-gradient(45deg,#2a0e0e, #611e1e ,#000000);
+    background: linear-gradient(45deg,#392323, #701818 ,#000000);
     /*グラデーションを定義*/
     background-size: 180% 180%;
     /*サイズを大きくひきのばす*/
@@ -40,6 +40,24 @@ header#homebutton {
     opacity: 0;
 }
 
+.menu {
+    animation-name: fadeInAnime;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+	padding: 0.2em 0.4em;
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, #ffffffa8 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: .3s;
+	color: #eae300;
+}
+.menu:hover {
+	background-position: 0 100%;
+	color: rgba(234, 227, 29, 0.433);
+}
+
 @keyframes fadeInAnime {
     from {
         opacity: 0;
@@ -66,14 +84,26 @@ header#homebutton {
     opacity: 0;
 }
 
-.hobby {
+.portfolio {
     background: #00000021;
     /*背景色の指定*/
     border: #0000002f 2px solid;
     /*境界線の指定 */
     padding: 40px 90px;
     margin: 40px auto;
-    width: 30%;
+    width: 35%;
+    color: rgb(255, 255, 255);
+}
+
+.project1 {
+    background: #00000021;
+    /*背景色の指定*/
+    border: #0000002f 2px solid;
+    /*境界線の指定 */
+    padding: 40px 90px;
+    margin: 40px auto;
+    width: 35%;
+    color: rgb(255, 255, 255);
 }
 
 .home {
