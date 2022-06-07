@@ -3,6 +3,22 @@
 
 <head>
     <link rel="stylesheet" href="aboutstyle.css">
+    <script>
+        var langDetect = 0;
+        // langDetect 0: 英語
+        // langDetect 1: 日本語
+        function buttonlangPressed() {
+          if (langDetect == 0) {
+            document.getElementById('do').innerHTML = "ようこそ!";
+            langDetect = 1;
+            console.log(langDetect);
+          } else if (langDetect == 1) {
+            document.getElementById('welcome').innerHTML = "Welcome!";
+            langDetect = 0;
+            console.log(langDetect);
+          }
+        }
+      </script>
 </head>
 
 <body class="aboutDo">
@@ -19,7 +35,7 @@
                 src="langw.png" width="27" height="27" alt="language"></a>
 
         <br><br><a class="menu" href="#do" style="text-decoration:none;">
-            &nbsp;&nbsp;:Do
+            &nbsp;&nbsp;:Profile
         </a>
         <br><br><a class="menu" href="#hobby" style="text-decoration:none;">
             &nbsp;&nbsp;:Hobbies
@@ -42,16 +58,46 @@
     <br><br><br><br>
     <div class="maincontent">
         <div class="do" id="do">
-            <h2>:Do</h2>
+            <h2>:Profile</h2>
             <br>
-            <ul>
+            <!-- <table> -->
+            <!-- <tr>
+                    <th>Name</th>
+                    <th>Ryota Kondo</th>
+                </tr>
+                <tr>
+                    <td>Date of birth</td>
+                    <td>December 22th, 2001</td>
+                </tr>
+                <tr>
+                    <td>Birthplace</td>
+                    <td>Tokyo, Japan</td>
+                </tr>
+                <tr>
+                    <td>Nationality</td>
+                    <td>Japanese</td>
+                </tr>
+                <tr>
+                    <td>Birthplace</td>
+                    <td>Tokyo, Japan</td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>Student at Aoyama Gakuin University</td>
+                </tr>
+            </table> -->
+            <!-- <ut>
                 <li>Ryota Kondo</li>
-                <li>Born on September 22th, 2001</li>
+                <li>Date of birth September 22th, 2001</li>
                 <li>I'm from Japan.</li>
-                <li>Student at Aoyama Gakuin University</li>
-            </ul>
+                <li>I'm currently majoring social informatics at Aoyama Gakuin University</li>
+                </ul> -->
+            <p>Name: Ryota Kondo</p>
+            <p>Date of birth: September 22th, 2001</p>
+            <p>Birthplace: Tokyo, Japan</p>
+            <p>I'm currently majoring social informatics at Aoyama Gakuin University.</p>
+            <p></p>
             <p>YOU DIDN'T SAY THE MAGIC WORD!
-                YOU DIDN'T SAY THE MAGIC WORD!
                 YOU DIDN'T SAY THE MAGIC WORD!
                 YOU DIDN'T SAY THE MAGIC WORD!
                 YOU DIDN'T SAY THE MAGIC WORD!
