@@ -3,22 +3,6 @@
 
 <head>
   <link rel="stylesheet" href="mystyle.css">
-  <script>
-    var langDetect = 0;
-    // langDetect 0: 英語
-    // langDetect 1: 日本語
-    function buttonlangPressed() {
-      if (langDetect == 0) {
-        document.getElementById('welcome').innerHTML = "ようこそ!";
-        langDetect = 1;
-        console.log(langDetect);
-      } else if (langDetect == 1) {
-        document.getElementById('welcome').innerHTML = "Welcome!";
-        langDetect = 0;
-        console.log(langDetect);
-      }
-    }
-  </script>
 </head>
 
 <body>
@@ -41,8 +25,9 @@
   <br>
   <table border="0" class="icons">
     <tr>
-      <td><a class="change_lang" href="javascript:buttonlangPressed();" style="text-decoration:none;"><img
-            src="lang2.png" width="31" height="31" alt="language"></a></td>
+      <td><a class="insta" href="https://github.com/Do1904"
+        style="text-decoration:none;"><img src="githubb.png" width="31" height="31" alt="github"></a></td>
+      <td></td>
       <td><a class="insta" href="https://www.instagram.com/do_1904rk" style="text-decoration:none;"><img src="insta.png"
             width="31" height="31" alt="instagram"></a></td>
     </tr>
