@@ -32,6 +32,10 @@ header#homebutton {
     }
 }
 
+.yellow {
+    filter: invert(81%) sepia(81%) saturate(633%) hue-rotate(359deg) brightness(106%) contrast(105%);
+}
+
 .header {
     animation-name: fadeInAnime;
     animation-delay: 0.5s;
@@ -112,16 +116,6 @@ header#homebutton {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
-	padding: 0.2em 0.4em;
-	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, #ffffff 50%);
-	background-position: 0 0;
-	background-size: 200% auto;
-	transition: .3s;
-	color: #eae300;
-}
-.home:hover {
-	background-position: -100% 0;
-	color: rgb(0, 0, 0);
 }
 
 .lang {
