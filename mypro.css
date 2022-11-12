@@ -88,19 +88,8 @@ header#homebutton {
     opacity: 0;
 }
 
-.portfolio {
-    background: #00000021;
-    /*背景色の指定*/
-    border: #0000002f 2px solid;
-    /*境界線の指定 */
-    padding: 40px 90px;
-    margin: 40px auto;
-    width: 35%;
-    color: rgb(255, 255, 255);
-}
-
-.project1 {
-    background: #00000021;
+.project {
+    background: #00000053;
     /*背景色の指定*/
     border: #0000002f 2px solid;
     /*境界線の指定 */
@@ -142,4 +131,37 @@ header#homebutton {
 .aboutdo:hover {
 	background-position: -100% 0;
 	color: #fff;
+}
+
+
+.img_wrap {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.img_wrap img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.img_wrap:hover img {
+    opacity: 0.3;
+    transition-duration: 0.3s;
+}
+
+.top_img_wrap {
+    width: 55px;
+    height: 31px;
+    margin: 0 auto;
+}
+
+.top_img_wrap img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.top_img_wrap:hover img {
+    opacity: 0.3;
+    transition-duration: 0.3s;
 }
