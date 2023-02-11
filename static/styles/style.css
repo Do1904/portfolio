@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body#index {
+    width: auto;
+    height: 90vh;
+    background: linear-gradient(45deg, #002782, #ffffff, #481212);
+    /*グラデーションを定義*/
+    background-size: 160% 160%;
+    /*サイズを大きくひきのばす*/
+    animation: bggradient 20s ease infinite;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    color: rgba(0, 0, 0, 0.859);
+}
+
+body#pro {
+    width: auto;
+    height: 90vh;
+    background: linear-gradient(45deg, #392323, #701818, #000000);
+    /*グラデーションを定義*/
+    background-size: 180% 180%;
+    /*サイズを大きくひきのばす*/
+    animation: bggradient 20s ease infinite;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    color: rgb(234, 227, 0);
+    background-attachment: fixed;
+}
+
+body#about {
+    width: auto;
+    height: 90vh;
+    background: linear-gradient(45deg, #8d9acd, #0d2451, #0033ab);
+    /*グラデーションを定義*/
+    background-size: 180% 180%;
+    /*サイズを大きくひきのばす*/
+    animation: bggradient 20s ease infinite;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
+}
+
+
+header#homebutton {
+    position: fixed;
+}
+
+header#home {
+    position: fixed;
+    width: 98.4%;
+}
+
+.yellow {
+    filter: invert(81%) sepia(81%) saturate(633%) hue-rotate(359deg) brightness(106%) contrast(105%);
+}
+
+.header {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.promenu {
+    animation-name: fadeInAnime;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    padding: 0.2em 0.4em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #ffffffa8 50%);
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    color: #eae300;
+}
+
+.promenu:hover {
+    background-position: 0 100%;
+    color: rgba(234, 227, 29, 0.433);
+}
+
+.aboutmenu {
+    animation-name: fadeInAnime;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    padding: 0.2em 0.4em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #ffffffa8 50%);
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    color: #ffffff;
+}
+
+.aboutmenu:hover {
+    background-position: 0 100%;
+    color: rgba(105, 105, 105, 0.673);
+}
+
+.top {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes bggradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fadeIn {
+    text-align: center;
+    margin: auto;
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#welcome {
+    text-align: center;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.introtext {
+    animation-name: fadeInAnime;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.maincontent {
+    animation-name: fadeInAnime;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.box {
+    background: #00000036;
+    /*背景色の指定*/
+    border: #5b5b5b60 2px solid;
+    /*境界線の指定 */
+    padding: 40px 90px;
+    margin: 40px auto;
+    width: 35%;
+    color: rgb(255, 255, 255);
+}
+
+/* .do {
+    background: #00000021;
+    border: #9b9b9b60 2px solid;
+    padding: 40px 90px;
+    margin: 40px auto;
+    width: 35%;
+} */
+
+.home {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+.lang {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.aboutdo {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    padding: 0.2em 0.4em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #0033ab 50%);
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    color: #eae300;
+}
+
+.mypro {
+    animation-name: fadeInAnime;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    padding: 0.2em 0.4em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #611e1e 50%);
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    color: #ffffff;
+}
+
+.mypro:hover {
+    background-position: 100% 0;
+    color: rgb(234, 227, 0);
+}
+
+.aboutdo:hover {
+    background-position: -100% 0;
+    color: #fff;
+}
+
+.hometext {
+    animation-name: fadeInAnime;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background: #ffffff6a;
+    /*背景色の指定*/
+    border: #d2d2d260 2px solid;
+    /*境界線の指定 */
+    box-shadow: 0 0 0 2px #ffffff3c;
+    /*  境界線の外側の指定 */
+    padding: 40px 90px;
+    margin: 40px auto;
+    width: 30%;
+}
+
+.hometext p {
+    margin: 15px 40px 40px 40px;
+    padding: 40px;
+}
+
+.cp_link_blue {
+    padding: 0.2em 0.4em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #0033ab 50%);
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    color: #0033ab;
+}
+
+.cp_link_blue:hover {
+    background-position: -100% 0;
+    color: #fff;
+}
+
+.cp_link_wine {
+    padding: 0.2em 0.4em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #611e1e 50%);
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    color: #611e1e;
+}
+
+.cp_link_wine:hover {
+    background-position: 100% 0;
+    color: rgb(234, 227, 0);
+}
+
+.change_lang {
+    animation-name: fadeInAnime;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    padding: 0.2em 0.4em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #000000bc 50%);
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    color: #000000b5;
+}
+
+.change_lang:hover {
+    background-position: 0 100%;
+    color: rgba(209, 209, 209, 0.78);
+}
+
+.insta {
+    animation-name: fadeInAnime;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.icons {
+    margin: auto;
+}
+
+.img_wrap {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.img_wrap img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.img_wrap:hover img {
+    opacity: 0.3;
+    transition-duration: 0.3s;
+}
+
+.top_img_wrap {
+    width: 55px;
+    height: 31px;
+    margin: 0 auto;
+}
+
+.top_img_wrap img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.top_img_wrap:hover img {
+    opacity: 0.3;
+    transition-duration: 0.3s;
+}
+
+#newcontext {
+    color: aqua;
+}
+
+#indexmenu {
+    margin: auto;
+}

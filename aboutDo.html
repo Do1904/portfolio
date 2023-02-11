@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="./static/styles/style.css">
     <script>
         var langDetect = 0;
         // langDetect 0: 英語
@@ -21,23 +21,27 @@
     </script>
 </head>
 
-<body class="aboutDo">
+<body id="about" class="aboutDo">
     <br>
     <header id="homebutton" style="z-index:10000">
         <br><br><a class="home" href="index.html" style="text-decoration:none;">
-            &nbsp;<div class="top_img_wrap"><img src="./static/pics/do1904logowhite.png" width="55" height="31" alt="mylogo"></div>
+            &nbsp;<div class="top_img_wrap"><img src="./static/pics/do1904logowhite.png" width="55" height="31"
+                    alt="mylogo"></div>
         </a>
         <br><br><a class="mypro" href="mypro.html" style="text-decoration:none;">
             &nbsp;&nbsp;My Project
         </a>
-        <br><br><br><br><a class="menu" href="#do" style="text-decoration:none;">
+        <br><br><br><br><a class="aboutmenu" href="#do" style="text-decoration:none;">
             &nbsp;&nbsp;:Profile
         </a>
-        <br><br><a class="menu" href="#skills" style="text-decoration:none;">
+        <br><br><a class="aboutmenu" href="#skills" style="text-decoration:none;">
             &nbsp;&nbsp;:Skills
         </a>
-        <br><br><a class="menu" href="#hobby" style="text-decoration:none;">
+        <br><br><a class="aboutmenu" href="#hobby" style="text-decoration:none;">
             &nbsp;&nbsp;:Hobbies
+        </a>
+        <br><br><a class="aboutmenu" href="#memo" style="text-decoration:none;">
+            &nbsp;&nbsp;:Dear Diary
         </a>
     </header>
     <br>
@@ -53,7 +57,7 @@
 
     <br><br><br><br>
     <div class="maincontent">
-        <div class="do" id="do">
+        <div class="box" id="do">
             <h2>:Profile</h2>
             <br>
             <!-- <table> -->
@@ -88,6 +92,7 @@
                 <li>I'm from Japan.</li>
                 <li>I'm currently majoring social informatics at Aoyama Gakuin University</li>
                 </ul> -->
+            <img src="./static/pics/:Do.jpg" width="50%" height="50%" alt=":Do">
             <p>近藤亮太(コンドウリョウタ)</p>
             <p>2001年12月22日生まれ</p>
             <p>東京都出身</p>
@@ -95,13 +100,12 @@
             <p>現在は、社会情報学部3年で、松澤研究室に所属しています。</p>
             <p>現在大学で学んでいることは、プログラミングをはじめ、<br>情報システム設計やソフトウェア開発などです。</p>
             <p>松澤研究室では、教育科学のワークショップ、<br>プログラミングについて勉強しています。</p>
-            <p style="color: aqua;">NEW!!</p>
-            <p>アルバイト、長期インターンでDMM Webcampというプログラミングスクールのメンターとして新人研修中です。
-            </p>
+            <h5 id="newcontext">NEW!!</h5>
+            <p id="newcontext">アルバイト、長期インターンでDMM Webcampというプログラミングスクールのメンターとして新人研修中です。</p>
         </div>
         <br><br>
 
-        <div class="skills" id="skills">
+        <div class="box" id="skills">
             <h2>:Skills</h2>
             <br><br>
             <h3>Javascript</h3>
@@ -109,7 +113,8 @@
             <p>大学の授業で初めて扱ったプログラミング言語がJavascriptでした。<br>現在も大学の授業と研究室で使用しています。</p><br>
             <p>研究室では、具体的に「Boidモデル」やソートアルゴリズムなどをJavascriptを用いて作成、再現しました。</p><br>
             <p>教授が担当する授業では、逆大喜利アプリ「ALL喜利」と言うアプリを開発しました。<br>
-                <br>※逆大喜利とは、お題の一部分が隠れた状態で大喜利をし、最後にお題の全てと回答を照らし合わせると言うものです。</p><br>
+                <br>※逆大喜利とは、お題の一部分が隠れた状態で大喜利をし、最後にお題の全てと回答を照らし合わせると言うものです。
+            </p><br>
             <p>2022年9月から、授業で使用するゲームを、ソフトウェア開発の勉強を兼ねて教授と共同開発をしました。</p><br>
             <p>使用したフレームワークやデータベースは、教授が独自で制作したもので、JavascriptとMysqlで開発を行いました。</p><br>
             <p>Knowledge Forumに新たな機能を追加するというプロジェクトで、Vue.jsを使用した経験があります。</p><br>
@@ -118,10 +123,12 @@
             <p>経験年数: 1.5年</p>
             <p>大学2年で初めて基礎を学びました。<br>現在は、現在制作途中のWebサービスの開発に使用しています。</p>
             <br><br><br>
-            <p style="color: aqua;">NEW!!</p>
-            <h3 style="color: aqua;">Ruby on Rails</h3>
-            <p>経験年数: 0.5年以下</p>
-            <p>大学3年終わり頃から、インターンの研修として使用しました。<br><br>研修の課題として本の紹介をするSNSアプリを開発しました。今後はインターン先でプログラミングスクールのメンターとして<br>受講生の指導、教育を行なっていく予定です。</p>
+            <h5 id="newcontext">NEW!!</h5>
+            <h3 id="newcontext">Ruby on Rails</h3>
+            <p id="newcontext">経験年数: 0.5年以下</p>
+            <p id="newcontext">
+                大学3年終わり頃から、インターンの研修として使用しました。<br><br>研修の課題として本の紹介をするSNSアプリを開発しました。今後はインターン先でプログラミングスクールのメンターとして<br>受講生の指導、教育を行なっていく予定です。
+            </p>
             <br><br><br>
             <h3>HTML/CSS</h3>
             <p>経験年数: 2.5年</p>
@@ -131,15 +138,17 @@
             <p>TOEIC IP: 905(2022 1月)<br>英検: 2級(2019 10月)</p>
         </div>
         <br><br>
-        
-        <div class="hobby" id="hobby">
+
+        <div class="box" id="hobby">
             <h2>:Hobbies</h2>
             <br>
             <h3>Football</h3>
             <p>幼稚園から大学1年にかけて約14年サッカーをしていました。<br>高校時代はサッカー部キャプテン兼部長としてチームを引っ張った経験もあります。<br><br>
                 現在はサッカー観戦に精を出しています。<br>ドイツ西部のGelsenkirchenという街に本拠地を置くFC Schalke
-                04<br>という伝統的なサッカークラブのファンです。<br>毎週必ずオンラインで試合観戦をしています。<br><br>大学生のうちにドイツに行って現地のスタジアムで<br>シャルケの試合を観戦する予定です。<p style="color: aqua;">NEW!!<br>2023年4月に行きます！！Jaaaaaaaaaaaaaaaaaa!! Glück auf!!!!</p><br>
+                04<br>という伝統的なサッカークラブのファンです。<br>毎週必ずオンラインで試合観戦をしています。<br><br>大学生のうちにドイツに行って現地のスタジアムで<br>シャルケの試合を観戦する予定です。
             </p>
+            <h5 id="newcontext">NEW!!</h5>
+            <p id="newcontext">2023年4月に行きます!!<br>Jaaaaaaaaaaaaaaaaaa!! Glück auf!!!!</p><br>
             <h3>Music</h3>
             <p>中学時代から友達の影響で音楽にハマりました。<br>ここで、僕がよく聴いてきた歴代アーティストをまとめてみました。<br><br>
             <table border="1" style="border-collapse: collapse; border-color: white;padding: 10px">
@@ -190,13 +199,26 @@
             </p>
             <br>
             <p>Adam Young "Voyager1"<br>
-            <a class="youtube" href="https://youtu.be/TOcnG1Pa1Uc" target="_blank" rel="noopener noreferrer"
-                style="text-decoration:none;"><div class="img_wrap"><img src="./static/pics/youtube.png" width="35" height="35" alt="youtube"></div></a><br><br><br>
+                <a class="youtube" href="https://youtu.be/TOcnG1Pa1Uc" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration:none;">
+                    <div class="img_wrap"><img src="./static/pics/youtube.png" width="35" height="35" alt="youtube">
+                    </div>
+                </a><br><br><br>
             </p>
             <p>My playlist<br><br>
-                <a class="spotify" href="https://open.spotify.com/playlist/3lHEM3KxivQNamyueZTlzW?si=1997365067784e79" target="_blank" rel="noopener noreferrer"
-                style="text-decoration:none;"><div class="img_wrap"><img src="./static/pics/spotify.png" width="30" height="30" alt="spotify"></div></a>
+                <a class="spotify" href="https://open.spotify.com/playlist/3lHEM3KxivQNamyueZTlzW?si=1997365067784e79"
+                    target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+                    <div class="img_wrap"><img src="./static/pics/spotify.png" width="30" height="30" alt="spotify">
+                    </div>
+                </a>
             </p>
+        </div>
+        <br><br>
+        <div class="box" id="memo">
+            <h2>:Dear Diary</h2>
+            <br>
+            <h4>2023/02/11</h4>
+            <p>シャルケが引き分けた。またまたまた引き分けた。クリーンシート連続3枚は良いけど、点が取れないね。Frey決めて欲しかった。</p>
         </div>
         <br><br><br><br>
 
