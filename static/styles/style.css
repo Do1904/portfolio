@@ -174,7 +174,16 @@ header#home {
     color: rgb(255, 255, 255);
 }
 
-/* .do {
+.project {
+    background: #00000046;
+    border: #00000060 2px solid;
+    padding: 40px 90px;
+    margin: 40px auto;
+    width: 35%;
+    color: rgb(255, 255, 255);
+}
+
+/* .project {
     background: #00000021;
     border: #9b9b9b60 2px solid;
     padding: 40px 90px;
